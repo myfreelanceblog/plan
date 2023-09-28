@@ -40,7 +40,7 @@
             </div>
             <div class="app-tabs__item scene">
                 <div class="app-container">
-                    <div class="question active">
+                    <div class="question">
                         <div class="question__content">
                             <a href="javascript:void(0);" class="logo--center logo"><img src="img/logo.svg" class="logo__img"></a>
                             <h2 class="question__content-title">Физическая активность</h2>
@@ -169,8 +169,181 @@
                             <div class="question__btn-inner"><button class="question__btn question__btn--prev js-prev-stage">Назад</button>
                                 <div class="question__percent">37%</div><button data-check="vegetables" class="question__btn question__btn--next js-next-stage">Продолжить</button>
                             </div>
-                        </div><img src="img/veg.webp" class="question__img">
+                        </div>
+                        <img src="img/veg.webp" class="question__img">
                     </div>
+                    <div class="question">
+                        <div class="question__content">
+                            <a href="javascript:void(0);" class="logo--center logo"><img src="img/logo.svg" class="logo__img"></a>
+                            <h2 class="question__content-title">Продукты</h2>
+                            <div class="question__content-text">Выберите продукты, которые вы хотели ли бы включить в план</div>
+                            <div class="question__choose question__choose--multiple">
+                                <label class="question__option question__option--multiple">
+                                    <div class="question__option-text">Яйца</div>
+                                    <picture>
+                                        <source srcset="img/eggs.webp" type="image/webp"><img src="img/eggs.png" class="question__option-icon">
+                                    </picture>
+                                    <picture>
+                                        <source srcset="img/eggs-hover.webp" type="image/webp"><img src="img/eggs-hover.png" class="question__option-hover">
+                                    </picture>
+                                    <input type="checkbox" name="food" value="1" class="question__input">
+                                </label>
+                                <label class="question__option question__option--multiple">
+                                    <div class="question__option-text">Орехи</div>
+                                    <picture>
+                                        <source srcset="img/nuts.webp" type="image/webp"><img src="img/nuts.png" class="question__option-icon">
+                                    </picture>
+                                    <picture>
+                                        <source srcset="img/nuts-hover.webp" type="image/webp"><img src="img/nuts-hover.png" class="question__option-hover">
+                                    </picture>
+                                    <input type="checkbox" name="food" value="1" class="question__input">
+                                </label>
+                                <label class="question__option question__option--multiple">
+                                    <div class="question__option-text">Сыр</div>
+                                    <picture>
+                                        <source srcset="img/cheese.webp" type="image/webp"><img src="img/cheese.png" class="question__option-icon">
+                                    </picture>
+                                    <picture>
+                                        <source srcset="img/cheese-hover.webp" type="image/webp"><img src="img/cheese-hover.png" class="question__option-hover">
+                                    </picture>
+                                    <input type="checkbox" name="food" value="1" class="question__input">
+                                </label>
+                            </div>
+                            <div class="question__btn-inner"><button class="question__btn question__btn--prev js-prev-stage">Назад</button>
+                                <div class="question__percent">50%</div><button data-check="food" class="question__btn question__btn--next js-next-stage">Продолжить</button>
+                            </div>
+                        </div>
+                        <img src="img/eat.webp" class="question__img">
+                    </div>
+                    <div class="question">
+                        <div class="question__content">
+                            <a href="javascript:void(0);" class="logo--center logo"><img src="img/logo.svg" class="logo__img"></a>
+                            <h2 class="question__content-title">Ваш типичный день</h2>
+                            <div class="question__content-text"></div>
+                            <div class="question__choose">
+                                <label class="question__option question__option--day">
+                                    <span>В офисе</span>
+                                    <input type="radio" name="labor" value="1" class="question__input">
+                                </label>
+                                <label class="question__option question__option--day">
+                                    <span>В офисе, но регулярно выхожу</span>
+                                    <input type="radio" name="labor" value="2" class="question__input">
+                                </label>
+                                <label class="question__option question__option--day">
+                                    <span>Большую часть дня провожу на ногах</span>
+                                    <input type="radio" name="labor" value="3" class="question__input">
+                                </label>
+                                <label class="question__option question__option--day">
+                                    <span>Ручной труд</span>
+                                    <input type="radio" name="labor" value="4" class="question__input">
+                                </label>
+                                <label class="question__option question__option--day">
+                                    <span>Большую часть дня провожу дома</span>
+                                    <input type="radio" name="labor" value="5" class="question__input">
+                                </label>
+                            </div>
+                            <div class="question__btn-inner">
+                                <button class="question__btn question__btn--prev js-prev-stage">Назад</button>
+                                <div class="question__percent">62%</div>
+                                <button data-check="labor" class="question__btn question__btn--next js-next-stage">Продолжить</button>
+                            </div>
+                        </div>
+                        <img src="img/day.webp" class="question__img">
+                    </div>
+                    <div class="question">
+                        <div class="question__content">
+                            <a href="javascript:void(0);" class="logo--center logo"><img src="img/logo.svg" class="logo__img"></a>
+                            <h2 class="question__content-title">Плохие привычки</h2>
+                            <div class="question__content-text">Выберите одну или несколько привычек, которые у вас есть</div>
+                            <div class="question__choose">
+                                <label class="question__option question__option--habits">
+                                    <span>Я часто не высыпаюсь</span>
+                                    <input type="checkbox" name="habbits" value="1" class="question__input">
+                                </label>
+                                <label class="question__option question__option--habits">
+                                    <span>Я ем поздно ночью</span>
+                                    <input type="checkbox" name="habbits" value="2" class="question__input">
+                                </label>
+                                <label class="question__option question__option--habits">
+                                    <span>Я употребляю много соли</span>
+                                    <input type="checkbox" name="habbits" value="3" class="question__input">
+                                </label>
+                                <label class="question__option question__option--habits">
+                                    <span>Я часто ем сладкое</span>
+                                    <input type="checkbox" name="habbits" value="4" class="question__input">
+                                </label>
+                                <label class="question__option question__option--habits">
+                                    <span>Я люблю газировки</span>
+                                    <input type="checkbox" name="habbits" value="5" class="question__input">
+                                </label>
+                                <label class="question__option question__option--habits">
+                                    <span>Ничего из перечисленного</span>
+                                    <input type="checkbox" name="habbits" value="6" class="question__input">
+                                </label>
+                            </div>
+                            <div class="question__btn-inner">
+                                <button class="question__btn question__btn--prev js-prev-stage">Назад</button>
+                                <div class="question__percent">75%</div>
+                                <button data-check="habbits" class="question__btn question__btn--next">Продолжить</button>
+                            </div>
+                        </div>
+                        <img src="img/habits.webp" class="question__img">
+                    </div>
+                </div>
+            </div>
+            <div class="app-tabs__item creation">
+                <div class="app-container">
+                    <div class="creation__inner">
+                        <div class="creation__content">
+                            <a href="javascript:void(0);" class="logo--creation logo"><img src="img/logo.svg" class="logo__img"></a>
+                            <div class="fill-box">
+                                <div class="fill-box__loader">
+                                    <svg width="226" height="226" viewport="0 0 113 113" version="1.1" xmlns="http://www.w3.org/2000/svg"><circle r="103" cx="112" cy="112" fill="transparent" stroke-dasharray="765.48"></circle><circle r="103" cx="112" cy="112" fill="transparent" stroke-dasharray="0,765.48" class="fill-box__line"></circle>
+                                    </svg>
+                                </div>
+                                <div class="fill-box__progress">15%</div>
+                            </div>
+                            <div class="creation__text-holder">
+                                <p class="creation__text fade-animation">Обрабатываем введенные данные...</p>
+                                <p class="creation__text fade-animation">Подсчитываем профиль питания...</p>
+                                <p class="creation__text fade-animation">Рассчитываем количество еды...</p>
+                                <p class="creation__text fade-animation">Выбираем подходящие рецепты...</p>
+                            </div>
+                        </div>
+                        <picture>
+                            <source srcset="img/creation.webp" type="image/webp">
+                            <img src="img/creation.png" class="creation__img">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div class="app-tabs__item resume-content">
+                <div class="resume">
+                    <h2 class="resume__title">Резюме вашего профиля</h2>
+                    <div class="resume__inner">
+                        <div class="resume__item resume__item_3">
+                            <div class="resume__item-top">
+                                <div class="resume__item-name">Рекомендуемое количество калорий</div>
+                                <picture>
+                                    <source srcset="img/help.webp" type="image/webp">
+                                    <img src="img/help.png" class="resume__item-help">
+                                </picture>
+                                <div class="resume__popup">
+                                    <div class="resume__popup-descr">Калории находятся в пределах рекомендованного диапазона +/- 100, так как их невозможно точно отслеживать. Следуя плану питания с ограничением калорий, количество потребляемых вами калорий не должно быть ниже этого значения. Ежедневное количество калорий рассчитывается на основе вашего целевого веса, физической активности, текущих измерений и образа жизни.</div>
+                                    <picture>
+                                        <source srcset="img/close.webp" type="image/webp"><img src="img/close.png" class="resume__popup-close">
+                                    </picture>
+                                </div>
+                            </div>
+                            <div class="resume__item-content resume__item-content--calories">
+                                <picture>
+                                    <source srcset="img/calories.webp" type="image/webp"><img src="img/calories.png" class="resume__item-calories">
+                                </picture>
+                            </div>
+                            <div class="resume__item-text">97-197</div>
+                        </div>
+                    </div>
+                    <a href="javascript:void(0);" class="button">Получить план прямо сейчас</a>
                 </div>
             </div>
         </div>
@@ -232,13 +405,6 @@
                                         <svg width="65" height="57" viewBox="0 0 65 57" xmlns="http://www.w3.org/2000/svg" class="progress-bar__img"><path fill-rule="evenodd" clip-rule="evenodd" d="M35.1396 1.78922C40.0254 2.6774 43.4786 6.13502 47.5603 8.9817C53.2921 12.9793 61.5449 14.7193 63.3887 21.4911C65.4724 29.1441 61.9585 37.3305 56.9459 43.4531C51.41 50.2146 43.8388 56.202 35.1396 55.9948C26.5571 55.7903 20.3976 48.5657 14.3411 42.4381C8.3052 36.3313 0.39573 30.0835 1.03659 21.4911C1.66328 13.0887 9.99025 7.66378 17.2474 3.4712C22.6488 0.350706 29.0116 0.675231 35.1396 1.78922Z" class="progress-bar__img-border"></path><g clip-path="url(#clip0)"><path d="M44.458 34.3181C44.9944 34.3199 45.4299 33.8862 45.4299 33.3503V15.9031C45.4299 14.2998 44.1301 13 42.5268 13H25.4709C23.8675 13 22.5677 14.2998 22.5677 15.9031V40.0959C22.5677 41.6993 23.8675 42.999 25.4709 42.999H35.7812C36.3171 42.999 36.7507 42.5636 36.7489 42.0271C36.7453 41.1368 36.7507 39.3163 36.7507 35.489C36.7507 34.843 37.2739 34.3199 37.9199 34.3199C41.7465 34.3199 43.5677 34.3144 44.458 34.3181ZM34.1827 19.1692H40.5938C41.1282 19.1692 41.5615 19.6024 41.5615 20.1369C41.5615 20.6713 41.1282 21.1046 40.5938 21.1046H34.1827C33.6482 21.1046 33.215 20.6713 33.215 20.1369C33.215 19.6024 33.6482 19.1692 34.1827 19.1692ZM31.359 35.1554L28.7885 37.7259C28.4106 38.1037 27.7979 38.1037 27.4199 37.7259L26.543 36.8489C26.1651 36.4709 26.1651 35.8582 26.543 35.4803C26.9209 35.1024 27.5336 35.1024 27.9115 35.4803L28.1042 35.673L29.9904 33.7868C30.3684 33.4089 30.9811 33.4089 31.359 33.7868C31.7369 34.1647 31.7369 34.7774 31.359 35.1554ZM31.359 27.2927L28.7885 29.8632C28.4106 30.2411 27.7979 30.2411 27.4199 29.8632L26.543 28.9862C26.1651 28.6083 26.1651 27.9956 26.543 27.6176C26.9209 27.2397 27.5336 27.2397 27.9115 27.6176L28.1042 27.8104L29.9904 25.9241C30.3684 25.5462 30.9811 25.5462 31.359 25.9241C31.7369 26.3021 31.7369 26.9148 31.359 27.2927ZM31.359 19.4301L28.7885 22.0006C28.4106 22.3784 27.7979 22.3784 27.4199 22.0006L26.543 21.1236C26.1651 20.7456 26.1651 20.1329 26.543 19.755C26.9209 19.3771 27.5336 19.3771 27.9115 19.755L28.1042 19.9477L29.9904 18.0615C30.3684 17.6836 30.9811 17.6836 31.359 18.0615C31.7369 18.4394 31.7369 19.0521 31.359 19.4301ZM34.6665 36.8299H34.1827C33.6482 36.8299 33.215 36.3966 33.215 35.8622C33.215 35.3277 33.6482 34.8945 34.1827 34.8945H34.6665C35.201 34.8945 35.6342 35.3277 35.6342 35.8622C35.6342 36.3966 35.201 36.8299 34.6665 36.8299ZM34.1827 28.9672C33.6482 28.9672 33.215 28.5339 33.215 27.9995C33.215 27.4651 33.6482 27.0318 34.1827 27.0318H40.5938C41.1282 27.0318 41.5615 27.4651 41.5615 27.9995C41.5615 28.5339 41.1282 28.9672 40.5938 28.9672H34.1827ZM45.1462 36.7881L39.219 42.7154C38.6093 43.3248 37.5672 42.89 37.5672 42.0313V36.1041C37.5672 35.5694 38.0003 35.1364 38.535 35.1364H44.4622C45.3096 35.1364 45.7644 36.1698 45.1462 36.7881Z" class="progress-bar__img-elem"></path></g><defs><clipPath id="clip0"><rect width="30" height="30" fill="white" transform="translate(19 13)" class="progress-bar__img-elem"></rect></clipPath></defs></svg>
                                         <div class="progress-bar__num"></div>
                                         <div class="progress-bar__text">Плохие привычки</div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="progress-bar__item">
-                                        <svg width="65" height="57" viewBox="0 0 65 57" xmlns="http://www.w3.org/2000/svg" class="progress-bar__img"><path fill-rule="evenodd" clip-rule="evenodd" d="M35.1396 1.78922C40.0254 2.6774 43.4786 6.13502 47.5603 8.9817C53.2921 12.9793 61.5449 14.7193 63.3887 21.4911C65.4724 29.1441 61.9585 37.3305 56.9459 43.4531C51.41 50.2146 43.8388 56.202 35.1396 55.9948C26.5571 55.7903 20.3976 48.5657 14.3411 42.4381C8.3052 36.3313 0.39573 30.0835 1.03659 21.4911C1.66328 13.0887 9.99025 7.66378 17.2474 3.4712C22.6488 0.350706 29.0116 0.675231 35.1396 1.78922Z" class="progress-bar__img-border"></path><g clip-path="url(#clip0)"><path d="M37.6263 29.8539H39.6077V27.7151C39.0549 28.5099 38.3875 29.2299 37.6263 29.8539Z" class="progress-bar__img-elem"></path><path d="M30.1457 19.6387C28.6951 19.6387 27.3914 20.2815 26.6584 21.358C26.1726 22.0718 26.153 22.9748 26.6088 23.6585C27.3207 24.7266 28.676 25.3901 30.1457 25.3901C31.5874 25.3901 32.888 24.7741 33.6247 23.7425C34.1419 23.0183 34.1209 22.0254 33.5724 21.272C32.8279 20.2493 31.547 19.6387 30.1457 19.6387Z" class="progress-bar__img-elem"></path><path d="M37.8431 18.171C36.1729 15.8765 33.3458 14.3653 30.1458 14.3653C26.8437 14.3653 23.9386 15.9745 22.2921 18.3929C20.6102 20.8633 20.556 24.0938 22.2135 26.5806C23.8439 29.0267 26.7895 30.6634 30.1458 30.6634C33.3985 30.6634 36.2656 29.1261 37.9235 26.8046C39.7673 24.2228 39.7103 20.736 37.8431 18.171ZM35.0576 24.7632C33.9913 26.2564 32.1551 27.1478 30.1458 27.1478C28.0945 27.1478 26.1779 26.184 25.1437 24.6325C24.2894 23.3507 24.3127 21.6774 25.203 20.3696C26.2639 18.8113 28.1118 17.8809 30.1458 17.8809C32.1083 17.8809 33.9214 18.7621 34.996 20.2382C35.9903 21.6041 36.015 23.4225 35.0576 24.7632Z" class="progress-bar__img-elem"></path><path d="M34.6068 31.6108C33.2817 32.1324 31.8249 32.4213 30.2967 32.4213C26.4011 32.4213 22.9699 30.5451 21 27.7169V31.8992C21 36.1646 24.4789 39.6347 28.755 39.6347H31.6151V35.2536C31.6151 34.7682 32.0096 34.3747 32.4963 34.3747C32.9829 34.3747 33.3774 34.7682 33.3774 35.2536V39.6347H35.1397V37.0114C35.1397 36.526 35.5342 36.1325 36.0208 36.1325C36.5075 36.1325 36.9019 36.526 36.9019 37.0114V39.6347H38.6642V35.2536C38.6642 34.7682 39.0587 34.3747 39.5453 34.3747C40.032 34.3747 40.4265 34.7682 40.4265 35.2536V39.6347H42.1887V37.0114C42.1887 36.526 42.5832 36.1325 43.0699 36.1325C43.5565 36.1325 43.951 36.526 43.951 37.0114V39.6347H45.7133V35.2536C45.7133 34.7682 46.1078 34.3747 46.5944 34.3747C47.081 34.3747 47.4755 34.7682 47.4755 35.2536V39.6347H50.1189C50.6055 39.6347 51.0001 39.2411 51.0001 38.7557V31.6116H34.6247C34.6187 31.6116 34.6129 31.6109 34.6068 31.6108Z" class="progress-bar__img-elem"></path></g><defs><clipPath id="clip0"><rect width="30" height="30" fill="white" transform="translate(21 12)" class="progress-bar__img-elem"></rect></clipPath></defs></svg>
-                                        <div class="progress-bar__num"></div>
-                                        <div class="progress-bar__text">Параметры</div>
                                     </div>
                                 </div>
                             </div>
