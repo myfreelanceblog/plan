@@ -580,106 +580,6 @@ img{
     text-align: center;
     text-transform: uppercase;
 }
-.resume__inner {
-    -webkit-box-pack: space-evenly;
-    -ms-flex-pack: space-evenly;
-    -webkit-box-align: stretch;
-    -ms-flex-align: stretch;
-    align-items: stretch;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin: 0 auto;
-    max-width: 940px;
-}
-.resume__item {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: 100% 112px;
-    border-radius: 20px;
-    -webkit-box-shadow: 0 0 25px rgba(0,0,0,.1);
-    box-shadow: 0 0 25px rgba(0,0,0,.1);
-    -ms-flex-direction: column;
-    flex-direction: column;
-    margin-bottom: 60px;
-    max-width: 440px;
-    padding: 21px 30px 25px;
-    position: relative;
-}
-.resume__item, .resume__item-top {
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
-.resume__item {
-    background-image: url(../img/bg.png);
-}
-.resume__item-name {
-    color: #242424;
-    font-size: 1.5625rem;
-    font-weight: 600;
-    line-height: 130%;
-    max-width: 320px;
-    width: 100%;
-}
-.resume__item-top picture {
-    cursor: pointer;
-    max-width: 32px;
-    width: 100%;
-}
-.resume__popup {
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start;
-    background-color: #fff;
-    border-radius: 10px;
-    -webkit-box-shadow: 0 4px 10px rgba(0,0,0,.15), 0 0 15px rgba(0,0,0,.1);
-    box-shadow: 0 4px 10px rgba(0,0,0,.15), 0 0 15px rgba(0,0,0,.1);
-    display: none;
-    justify-content: space-between;
-    max-width: 400px;
-    padding: 25px 20px 25px 30px;
-    position: absolute;
-    right: 10%;
-    top: 10%;
-    width: 0;
-    z-index: 10;
-}
-.resume__popup-close {
-    cursor: pointer;
-    max-width: 24px;
-    width: 100%;
-}
-.resume__item-content {
-    -ms-flex-item-align: center;
-    align-self: center;
-    margin: 50px 0 23px;
-}
-.resume__item-text {
-    -ms-flex-item-align: center;
-    align-self: center;
-    color: #49722e;
-    font-size: 1.875rem;
-    font-style: italic;
-    font-weight: 600;
-    line-height: 100%;
-    text-align: center;
-    text-transform: uppercase;
-}
 .resume a {
     background: #49722e;
     border: none;
@@ -704,6 +604,17 @@ img{
     margin: 0 auto;
     max-width: 392px;
     text-decoration: none;
+}
+.plan-result{
+    padding: 0 0 50px;
+    font-size: 16px;
+}
+.plan-result__item{
+    padding: 0 0 20px;
+    display: none;
+}
+.plan-result__item.active{
+    display: block;
 }
 
 @media all and (max-width: 900px){

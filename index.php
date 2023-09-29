@@ -19,6 +19,7 @@
 
     <div id="app">
         <div class="app-tabs">
+            <!-- Начало блока app-tabs__item -->
             <div class="app-tabs__item getplan active">
                 <img src="img/plate.webp" class="getplan__img">
                 <div class="app-container">
@@ -38,8 +39,16 @@
                     </div>
                 </div>
             </div>
+            <!-- Конец блока app-tabs__item -->
+
+            <!-- Начало блока app-tabs__item -->
             <div class="app-tabs__item scene">
                 <div class="app-container">
+
+<!--
+    ниже пример блока, которуму можно задать data-id и в нем указать id блока, который будет отображаться на финальном этапе.
+-->
+                    <!-- Начало блока question -->
                     <div class="question">
                         <div class="question__content">
                             <a href="javascript:void(0);" class="logo--center logo"><img src="img/logo.svg" class="logo__img"></a>
@@ -47,7 +56,7 @@
                             <div class="question__choose">
                                 <label class="question__option question__option--active">
                                     <span>Минимальная физическая активность</span>
-                                    <input type="radio" name="activity" value="1" class="question__input">
+                                    <input type="radio" name="activity" value="1" class="question__input" data-id="some1">
                                 </label>
                                 <label class="question__option question__option--active">
                                     <span>Я часто хожу пешком</span>
@@ -63,7 +72,7 @@
                                 </label>
                                 <label class="question__option question__option--active">
                                     <span>Я занимаюсь 5–7 раз в неделю</span>
-                                    <input type="radio" name="activity" value="5" class="question__input">
+                                    <input type="radio" name="activity" value="5" class="question__input" data-id="some2">
                                 </label>
                             </div>
                             <div class="question__btn-inner">
@@ -74,6 +83,9 @@
                         </div>
                         <img src="img/active.webp" class="question__img">
                     </div>
+                    <!-- Конец блока question -->
+
+                    <!-- Начало блока question -->
                     <div class="question">
                         <div class="question__content">
                             <a href="/" class="logo--center logo"><img src="img/logo.svg" class="logo__img"></a>
@@ -88,7 +100,7 @@
                                     <picture>
                                         <source srcset="img/chic-hover.webp" type="image/webp"><img src="img/chic-hover.png" class="question__option-hover">
                                     </picture>
-                                    <input type="checkbox" name="meat" value="1" class="js-protein question__input">
+                                    <input type="checkbox" name="meat" value="1" class="js-protein question__input" data-id="some3">
                                 </label>
                                 <label class="question__option question__option--multiple">
                                     <div class="question__option-text">Свинина</div>
@@ -129,6 +141,9 @@
                         </div>
                         <img src="img/meat.webp" class="question__img">
                     </div>
+                    <!-- Конец блока question -->
+
+                    <!-- Начало блока question -->
                     <div class="question">
                         <div class="question__content">
                             <a href="javascript:void(0);" class="logo--center logo"><img src="img/logo.svg" class="logo__img"></a>
@@ -172,6 +187,9 @@
                         </div>
                         <img src="img/veg.webp" class="question__img">
                     </div>
+                    <!-- Конец блока question -->
+
+                    <!-- Начало блока question -->
                     <div class="question">
                         <div class="question__content">
                             <a href="javascript:void(0);" class="logo--center logo"><img src="img/logo.svg" class="logo__img"></a>
@@ -215,6 +233,9 @@
                         </div>
                         <img src="img/eat.webp" class="question__img">
                     </div>
+                    <!-- Конец блока question -->
+
+                    <!-- Начало блока question -->
                     <div class="question">
                         <div class="question__content">
                             <a href="javascript:void(0);" class="logo--center logo"><img src="img/logo.svg" class="logo__img"></a>
@@ -250,6 +271,9 @@
                         </div>
                         <img src="img/day.webp" class="question__img">
                     </div>
+                    <!-- Конец блока question -->
+
+                    <!-- Начало блока question -->
                     <div class="question">
                         <div class="question__content">
                             <a href="javascript:void(0);" class="logo--center logo"><img src="img/logo.svg" class="logo__img"></a>
@@ -289,8 +313,16 @@
                         </div>
                         <img src="img/habits.webp" class="question__img">
                     </div>
+                    <!-- Конец блока question -->
+
                 </div>
             </div>
+            <!-- Конец блока app-tabs__item -->
+
+<!--
+    Блок анимации, в нем можно задать время анимации в секундах в аттрибуте "data-time" блоку с классом "fill-box__line"
+    В блок с классом creation__text-holder можно добавить сколько угодно текстовых блоков, все они будут выводиться равномерно поочередно в течении заданного времени в data-time
+-->
             <div class="app-tabs__item creation">
                 <div class="app-container">
                     <div class="creation__inner">
@@ -298,10 +330,10 @@
                             <a href="javascript:void(0);" class="logo--creation logo"><img src="img/logo.svg" class="logo__img"></a>
                             <div class="fill-box">
                                 <div class="fill-box__loader">
-                                    <svg width="226" height="226" viewport="0 0 113 113" version="1.1" xmlns="http://www.w3.org/2000/svg"><circle r="103" cx="112" cy="112" fill="transparent" stroke-dasharray="765.48"></circle><circle r="103" cx="112" cy="112" fill="transparent" stroke-dasharray="0,765.48" class="fill-box__line"></circle>
+                                    <svg width="226" height="226" viewport="0 0 113 113" version="1.1" xmlns="http://www.w3.org/2000/svg"><circle r="103" cx="112" cy="112" fill="transparent" stroke-dasharray="765.48"></circle><circle r="103" cx="112" cy="112" fill="transparent" stroke-dasharray="0,765.48" class="fill-box__line" data-time="12"></circle>
                                     </svg>
                                 </div>
-                                <div class="fill-box__progress">15%</div>
+                                <div class="fill-box__progress">0%</div>
                             </div>
                             <div class="creation__text-holder">
                                 <p class="creation__text fade-animation">Обрабатываем введенные данные...</p>
@@ -317,31 +349,28 @@
                     </div>
                 </div>
             </div>
+
+<!--
+    Все блоки с классом "plan-result__item" скрыты, отображаться будут только те, на которые кликнет пользователь, их нужно связать по id, Блоку с  классом "plan-result__item" задаем id, а кнопке выше data-id, по клику на которую должен будет в итоге отобразиться текст.
+    !!! Не забывать, что на странице может быть только один блок с уникальным id
+-->
+
             <div class="app-tabs__item resume-content">
                 <div class="resume">
                     <h2 class="resume__title">Резюме вашего профиля</h2>
-                    <div class="resume__inner">
-                        <div class="resume__item resume__item_3">
-                            <div class="resume__item-top">
-                                <div class="resume__item-name">Рекомендуемое количество калорий</div>
-                                <picture>
-                                    <source srcset="img/help.webp" type="image/webp">
-                                    <img src="img/help.png" class="resume__item-help">
-                                </picture>
-                                <div class="resume__popup">
-                                    <div class="resume__popup-descr">Калории находятся в пределах рекомендованного диапазона +/- 100, так как их невозможно точно отслеживать. Следуя плану питания с ограничением калорий, количество потребляемых вами калорий не должно быть ниже этого значения. Ежедневное количество калорий рассчитывается на основе вашего целевого веса, физической активности, текущих измерений и образа жизни.</div>
-                                    <picture>
-                                        <source srcset="img/close.webp" type="image/webp"><img src="img/close.png" class="resume__popup-close">
-                                    </picture>
-                                </div>
+                    <div class="app-container">
+                        <div class="plan-result">
+                            <div id="some1" class="plan-result__item">
+                                Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Пор подзаголовок напоивший он безопасную семь его подпоясал которой эта если океана ручеек она на берегу, рукописи своего большого. Это дорогу скатился залетают путь вдали щеке своих собрал свое точках она агентство, вопроса, ручеек раз по всей продолжил текстами дал обеспечивает даль имени сбить встретил. Которое, свой? По всей, снова семь не рукопись, маленькая, предупреждал большой образ проектах жаренные то заманивший курсивных свой напоивший осталось? Живет последний снова рыбными речью своего лучше использовало? Всемогущая большой от всех он жаренные которое встретил точках буквоград обеспечивает повстречался, ее семь всеми алфавит жизни живет ему заманивший необходимыми. Там, имени точках? До силуэт языкового текст дал переписывается решила, пояс щеке рукописи сих ручеек своего которой пустился диких. Над живет страну коварных рыбного деревни диких рекламных грустный себя напоивший щеке свое силуэт, оксмокс повстречался журчит, ему своих бросил если сбить строчка однажды одна они, возвращайся рукопись единственное. Вопрос гор все большой, послушавшись рукопись что наш языкового продолжил назад выйти! Оксмокс силуэт маленький выйти, гор подзаголовок бросил реторический? За языком предупреждал страна, выйти эта, предложения безопасную коварных там напоивший всемогущая злых подпоясал строчка свою. Ipsum, запятых обеспечивает. Буквоград продолжил всеми великий знаках себя проектах единственное своего заманивший, предупреждал пунктуация. Всеми.
                             </div>
-                            <div class="resume__item-content resume__item-content--calories">
-                                <picture>
-                                    <source srcset="img/calories.webp" type="image/webp"><img src="img/calories.png" class="resume__item-calories">
-                                </picture>
+                            <div id="some2" class="plan-result__item">
+                                По всей, снова семь не рукопись, маленькая, предупреждал большой образ проектах жаренные то заманивший курсивных свой напоивший осталось? Живет последний снова рыбными речью своего лучше использовало? Всемогущая большой от всех он жаренные которое встретил точках буквоград обеспечивает повстречался, ее семь всеми алфавит жизни живет ему заманивший необходимыми. Там, имени точках? До силуэт языкового текст дал переписывается решила, пояс щеке рукописи сих ручеек своего которой пустился диких. Над живет страну коварных рыбного деревни диких рекламных грустный себя напоивший щеке свое силуэт, оксмокс повстречался журчит, ему своих бросил если сбить строчка однажды одна они, возвращайся рукопись единственное. Вопрос гор все большой, послушавшись рукопись что наш языкового продолжил назад выйти! Оксмокс силуэт маленький выйти, гор подзаголовок бросил реторический? За языком предупреждал страна, выйти эта, предложения безопасную коварных там напоивший всемогущая злых подпоясал строчка свою. Ipsum, запятых обеспечивает. Буквоград продолжил всеми великий знаках себя проектах единственное своего заманивший, предупреждал пунктуация. Всеми.
                             </div>
-                            <div class="resume__item-text">97-197</div>
+                            <div id="some3" class="plan-result__item">
+                                За языком предупреждал страна, выйти эта, предложения безопасную коварных там напоивший всемогущая злых подпоясал строчка свою. Ipsum, запятых обеспечивает. Буквоград продолжил всеми великий знаках себя проектах единственное своего заманивший, предупреждал пунктуация. Всеми.
+                            </div>
                         </div>
+                        
                     </div>
                     <a href="javascript:void(0);" class="button">Получить план прямо сейчас</a>
                 </div>

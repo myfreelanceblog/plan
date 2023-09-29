@@ -37,30 +37,46 @@ jQuery(document).ready(function ($) {
             $(el).parent('.question__choose').find('.question__option').removeClass('active');
             $(el).addClass('active');
         }
+
+        $('.plan-result__item').removeClass('active');
+        $('.question__option input').each(function () {
+            if ($(this).is(':checked')) {
+                let id = $(this).attr('data-id');
+                if (id) {
+                    $('#' + id).addClass('active');
+                }
+            }
+        });
     })
 
     function checkAnimateCircle() {
         if ($('.creation').hasClass('active')) {
             let allText = $('.creation__text').length;
-            let endAnimationSec = 12;
+            let endAnimationSec = $('.fill-box__line').attr('data-time');
+            $('.fill-box__line').css({
+                '-webkit-animation-duration': endAnimationSec+'s',
+                'animation-duration': endAnimationSec+'s',
+            });
             let stopPercent = 100;
             let intervalSec = endAnimationSec / stopPercent;
-            let intervalPercent = 0;
+            let intervalPercentTimeout = 15;
+            let intervalPercent = 0 + intervalPercentTimeout;
 
             const reinitAnim = setInterval(() => {
-                intervalPercent += intervalSec;
-
-                $('.fill-box__progress').html(Math.round(intervalPercent) + '%');
-                if (intervalPercent >= stopPercent) {
+                intervalPercent++;
+               
+                if (intervalPercent > stopPercent) {
                     clearInterval(reinitAnim);
-                    $('.fill-box__line').css('stroke-dasharray', '765.48');
+                    $('.fill-box__line').css('stroke-dasharray', '765,48');
                     goTo($('.creation__content'), 'next', 'section')
+                } else {
+                    $('.fill-box__progress').html(Math.round(intervalPercent) + '%');
                 }
 
-                const indexActiveText = Math.floor((intervalPercent / stopPercent) * allText);
+                let indexActiveText = Math.floor(((intervalPercent - (intervalPercentTimeout / 2)) / stopPercent) * allText);
                 
                 $('.creation__text').removeClass('active').eq(indexActiveText).addClass('active fade-animation');
-            }, intervalSec * 100)
+            }, intervalSec * 1000)
         }
     }
 
